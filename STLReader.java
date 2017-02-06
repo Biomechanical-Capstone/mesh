@@ -70,7 +70,8 @@ public class STLReader {
 		
 			// get the number of faces
 			len = in.readInt();
-		
+			//HAD TO SPECIFY NUMBER OF FACES FOR MY MESH
+			//len = 3;
 			System.out.println("STL; faces=" + len);
 		
 			count++;
