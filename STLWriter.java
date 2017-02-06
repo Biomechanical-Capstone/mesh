@@ -66,7 +66,7 @@ public class STLWriter {
 			    		    "\"; Produced by Art of Illusion " + VERSION +
 			    		    ", " + new Date().toString() +
 			    		"                                                            ";
-//
+//				PROBLEM HERE
 //			    hdr = "TEST MESH                                                            "
 //			    		+ "                                                         ";	
 			    }
