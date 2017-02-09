@@ -1,12 +1,14 @@
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 
 import objects.TriangleMesh;
 
 public class Test {
-	public static void main(String args[]) throws FileNotFoundException, IOException {
+	public static void main(String args[]) throws FileNotFoundException, IOException, InterruptedException {
 		STLReader reader = new STLReader();
 		BufferedInputStream is = new BufferedInputStream(new FileInputStream("test.stl"));
 		TriangleMesh mesh = reader.importStream(is);
