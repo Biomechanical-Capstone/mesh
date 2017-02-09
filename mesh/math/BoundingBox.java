@@ -1,4 +1,4 @@
-package math;
+package mesh.math;
 /* Copyright (C) 1999-2000 by Peter Eastman
 
    This program is free software; you can redistribute it and/or modify it under the

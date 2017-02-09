@@ -1,4 +1,4 @@
-package objects;
+package mesh.objects;
 /* Copyright (C) 1999-2015 by Peter Eastman
 
    This program is free software; you can redistribute it and/or modify it under the
@@ -12,8 +12,8 @@ package objects;
 import java.awt.*;
 import java.util.*;
 
-import math.BoundingBox;
-import math.Vec3;
+import mesh.math.BoundingBox;
+import mesh.math.Vec3;
 
 /** The TriangleMesh class represents an aritrary surface defined by a mesh of triangular
     faces.  Depending on the selected smoothing method, the surface may simply consist of

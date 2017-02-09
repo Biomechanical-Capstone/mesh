@@ -1,15 +1,15 @@
+package mesh.io;
 import java.io.DataOutput;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-import math.Mat4;
-import math.Vec3;
-import objects.MeshVertex;
+import mesh.math.Mat4;
+import mesh.math.Vec3;
+import mesh.objects.MeshVertex;
 //import objects.ObjectInfo;
-import objects.TriangleMesh;
-import streams.LittleEndianDataOutputStream;
+import mesh.objects.TriangleMesh;
 
 public class STLWriter {
 	public static final String VERSION = "3.0";

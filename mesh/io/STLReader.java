@@ -1,3 +1,4 @@
+package mesh.io;
 import java.io.DataInput;
 import java.io.EOFException;
 import java.io.IOException;
@@ -5,10 +6,9 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import math.BoundingBox;
-import math.Vec3;
-import objects.TriangleMesh;
-import streams.LittleEndianDataInputStream;
+import mesh.math.BoundingBox;
+import mesh.math.Vec3;
+import mesh.objects.TriangleMesh;
 
 public class STLReader {
 	

@@ -1,4 +1,4 @@
-package objects;
+package mesh.objects;
 /* Copyright (C) 1999-2004 by Peter Eastman
 
    This program is free software; you can redistribute it and/or modify it under the
@@ -9,7 +9,7 @@ package objects;
    WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A 
    PARTICULAR PURPOSE.  See the GNU General Public License for more details. */
 
-import math.Vec3;
+import mesh.math.Vec3;
 
 /** MeshVertex represents a vertex in a mesh object. */
 
