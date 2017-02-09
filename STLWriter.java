@@ -59,7 +59,7 @@ public class STLWriter {
 			}
 
 				out.writeBytes(hdr);
-				out.writeInt(faces);
+				out.writeInt(mesh.getFaceCount());
 
 			    vert = mesh.getVertices();
 			    face = mesh.getFaces();
