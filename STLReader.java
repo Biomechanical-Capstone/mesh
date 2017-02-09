@@ -11,8 +11,6 @@ import objects.TriangleMesh;
 import streams.LittleEndianDataInputStream;
 
 public class STLReader {
-	 private static final String QUOTES = "\"'";
-
 	
 	/**
      *  Import a new Scene object from a (BINARY STL) stream
@@ -48,21 +46,6 @@ public class STLReader {
 			} catch (EOFException e) {
 			    System.out.println("STL: " + e);
 			}
-		
-			int pos = 0;
-			while (pos < 80 && buff[pos] == ' ') pos++;
-		
-			if (QUOTES.indexOf(buff[pos]) >= 0) {
-			    int epos = pos;
-			    while (epos < 80 && buff[epos] != buff[pos]) epos++;
-		
-			    if (pos < 80 && epos > pos && epos < 80)
-				name = new String(buff, pos+1, epos-pos-2);
-			}
-			if (name == null || name.length() == 0)
-			    name = "Object-" + count;
-		
-			System.out.println("STL: name=" + name);
 		
 			vlist.clear();
 			flist.clear();
