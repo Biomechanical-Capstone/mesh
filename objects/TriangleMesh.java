@@ -10,8 +10,6 @@ package objects;
    PARTICULAR PURPOSE.  See the GNU General Public License for more details. */
 
 import java.awt.*;
-import java.io.*;
-import java.lang.ref.*;
 import java.util.*;
 
 import math.BoundingBox;
@@ -198,12 +196,9 @@ public class TriangleMesh
   private BoundingBox bounds;
 
   private static double LOOP_BETA[], BUTTERFLY_COEFF[][];
-  private static final int MAX_SUBDIVISIONS = 20;
-
 
   /* The following constants are used during subdivision for recording parameter types. */
 
-  private static final int PER_OBJECT = 0;
   private static final int PER_VERTEX = 1;
   private static final int PER_FACE = 2;
   private static final int PER_FACE_VERTEX = 3;

@@ -18,7 +18,6 @@ public class STLReader {
 	public TriangleMesh importStream(InputStream is) throws IOException
 	{
 		int x, vertno=0, face[], faceArray[][] = new int[0][0], len;
-		String name;
 		Vec3 vert, norm, calcNorm, vertArray[], v1, v2, v3;
 		Integer index;
 		ArrayList vlist = new ArrayList(1024*128);
@@ -26,7 +25,6 @@ public class STLReader {
 		HashMap vmap = new HashMap(1024*128);
 		byte[] buff = new byte[80];
 		
-		name = null;
 		norm = new Vec3();
 		vert = new Vec3();
 		vertArray = new Vec3[0];

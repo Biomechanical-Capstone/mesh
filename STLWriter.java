@@ -1,19 +1,9 @@
-import java.io.CharArrayWriter;
-import java.io.DataInput;
 import java.io.DataOutput;
-import java.io.EOFException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.OutputStream;
 import java.text.NumberFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Locale;
 
-
-import math.BoundingBox;
 import math.Mat4;
 import math.Vec3;
 import objects.MeshVertex;
