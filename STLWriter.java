@@ -52,27 +52,14 @@ public class STLWriter {
 			Vec3 v;
 			//Mat4 trans = null;
 			double length;
-			String hdr = null;
+			
+			String hdr = ".";
+			for (int i = 0; i < 79; i++) {
+				hdr += ".";
+			}
 
-			//for (int x = list.size()-1; x >= 0; x--) {
-			    //info = (ObjectInfo) list.get(x);
-			    //mesh = info.object.convertToTriangleMesh(surfError);
-
-			    //if (mesh == null) continue;
-
-			    if (hdr == null) {
-				// generate 80 bytes of header text
-			    	hdr = "\"" + Util.translate(mesh.name, " ", "_") +
-			    		    "\"; Produced by Art of Illusion " + VERSION +
-			    		    ", " + new Date().toString() +
-			    		"                                                            ";
-//				PROBLEM HERE
-//			    hdr = "TEST MESH                                                            "
-//			    		+ "                                                         ";	
-			    }
-			    out.writeBytes(hdr.substring(0, 80));
+				out.writeBytes(hdr);
 				out.writeInt(faces);
-			    //}
 
 			    vert = mesh.getVertices();
 			    face = mesh.getFaces();
