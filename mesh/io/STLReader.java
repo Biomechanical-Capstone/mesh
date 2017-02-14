@@ -6,7 +6,6 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import mesh.math.BoundingBox;
 import mesh.math.Vec3;
 import mesh.objects.TriangleMesh;
 
@@ -30,7 +29,6 @@ public class STLReader {
 		vertArray = new Vec3[0];
 		faceArray = new int[0][0];
 		face = new int[3];
-		BoundingBox bounds = new BoundingBox(vert, vert);
 		
 		// binary STL is always little-endian
 		DataInput in = new LittleEndianDataInputStream(is);
@@ -76,12 +74,6 @@ public class STLReader {
 				    face[vertno] = index.intValue();
 				}
 				else {
-				    if (vert.x < bounds.minx) bounds.minx = vert.x;
-				    if (vert.x > bounds.maxx) bounds.maxx = vert.x;
-				    if (vert.y < bounds.miny) bounds.miny = vert.y;
-				    if (vert.y > bounds.maxy) bounds.maxy = vert.y;
-				    if (vert.z < bounds.minz) bounds.minz = vert.z;
-				    if (vert.z > bounds.maxz) bounds.maxz = vert.z;
 		
 				    x = vlist.size();
 				    face[vertno] = x;
